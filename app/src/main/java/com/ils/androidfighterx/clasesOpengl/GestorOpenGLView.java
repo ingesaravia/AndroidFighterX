@@ -1,0 +1,23 @@
+package com.ils.androidfighterx.clasesOpengl;
+
+import android.content.Context;
+import android.opengl.GLSurfaceView;
+
+public class GestorOpenGLView extends GLSurfaceView {
+    public GestorRenderer miRenderer;
+
+    public GestorOpenGLView(Context context, int opcionObjeto) {
+        super(context);
+
+        // Create an OpenGL ES 2.0 context.
+        setEGLContextClientVersion(2);
+        //fix for error No Config chosen, but I don't know what this does.
+        super.setEGLConfigChooser(8, 8, 8, 8, 16, 0);
+
+        // Set the Renderer for drawing on the GLSurfaceView
+        miRenderer = new GestorRenderer(opcionObjeto);
+        setRenderer(miRenderer);
+        // Render the view only when there is a change in the drawing data
+        setRenderMode(GLSurfaceView.RENDERMODE_CONTINUOUSLY);
+    }
+}

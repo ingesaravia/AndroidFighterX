@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/wall3"
+    tools:context="com.ils.androidfighterx.activity.ActivityGps">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Posicion"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/btnGpsPosicion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GPS" />
+        <Button
+            android:id="@+id/btnNetGpsProvider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NET GPS"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_below = "@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tools"
+            android:textSize="20sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnGpsActivo"
+            android:text="GPS ACTIVO?"/>
+        <Button
+            android:id="@+id/btnGpsProvider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROVIDERS"/>
+        <Button
+            android:id="@+id/btnCriteria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CRITERIA"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below = "@+id/linearLayout2"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tiempoMin/distMin"
+            android:textSize="20sp"/>
+        <Spinner
+            android:id="@+id/cmbtiempoMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Spinner>
+        <Spinner
+            android:id="@+id/cmbdistMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linearLayout3">
+        <EditText
+            android:id="@+id/infoGps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor = "#262a26"
+            android:background="#9effffff"
+            android:textIsSelectable="false"/>
+    </LinearLayout>
+</RelativeLayout>

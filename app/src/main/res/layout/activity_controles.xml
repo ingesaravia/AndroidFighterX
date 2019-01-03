@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/tabhost"
+    tools:context="com.ils.androidfighterx.activity.ActivityControles">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TabWidget
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@android:id/tabs">
+        </TabWidget>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/tab1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtView1"
+                    android:text="CheckBox"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtView1"
+                    android:id="@+id/chckBox1"
+                    android:text="CheckBox1"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/chckBox1"
+                    android:id="@+id/chckBox2"
+                    android:text="CheckBox2"/>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/tab2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txtView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RadioGroup"/>
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtView2"
+                    android:id="@+id/radioGroup">
+
+                    <RadioButton
+                        android:id="@+id/radioOp1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RadioButton 1"/>
+                    <RadioButton
+                        android:id="@+id/radioOp2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RadioButton 2"/>
+                    <RadioButton
+                        android:id="@+id/radioOp3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RadioButton 3"/>
+                </RadioGroup>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/tab3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txtView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Spinner"/>
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/txtView3"
+                    android:spinnerMode="dropdown"
+                    />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/tab4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtView4"
+                    android:text="GridView"/>
+                <GridView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gridView"
+                    android:layout_below="@id/txtView4"/>
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>

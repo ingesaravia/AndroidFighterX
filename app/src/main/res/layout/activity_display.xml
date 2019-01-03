@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/wall5"
+    tools:context="com.ils.androidfighterx.activity.ActivityDisplay">
+    <ScrollView
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+        <EditText
+            android:id="@+id/infoDisplay"
+            android:textColor = "#262a26"
+            android:background="#9effffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textIsSelectable="true"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

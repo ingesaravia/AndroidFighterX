@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relative0"
+    tools:context="com.ils.androidfighterx.activity.ActivityWebview">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear1"
+        android:orientation="vertical">
+        <EditText
+            android:inputType="textUri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/urlNavegar"
+            android:labelFor="@id/urlNavegar"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnNavegar"
+            android:layout_marginBottom="@+id/urlNavegar"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linear2"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linear1">
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</RelativeLayout>

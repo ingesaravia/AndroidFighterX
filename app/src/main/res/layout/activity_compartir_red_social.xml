@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ils.androidfighterx.activity.ActivityCompartirRedSocial">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AndroidFighterX"
+        android:textSize="20dp">
+
+        <EditText
+            android:id="@+id/msjShareWith"
+            android:text="https://archive.org/details/arcade_outrun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnShareImagen"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/logoimagen"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnShareFacebook"
+                android:background="@drawable/logofacebook"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+            <Button
+                android:id="@+id/btnShareFacebookLite"
+                android:background="@drawable/logofacebooklite"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+            <Button
+                android:id="@+id/btnShareWhatsapp"
+                android:background="@drawable/logowhatsapp"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+            <Button
+                android:id="@+id/btnShareQuestion"
+                android:background="@drawable/logoquestion"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
